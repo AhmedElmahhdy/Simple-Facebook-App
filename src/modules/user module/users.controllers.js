@@ -6,7 +6,6 @@ import { Comment } from "../../../DB/Models/comment.model.js"
 export const register = async(req,res)=>{
     const {email,password,username}  = req.body
     const isEmailExist = await User.findOne({where:{email:email}})
-    console.log(isEmailExist);
     if (isEmailExist){
        return res.json({message:"email already exist"})
     }

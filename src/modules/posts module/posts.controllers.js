@@ -18,7 +18,6 @@ export const getAllPosts = async(req,res)=>{
 
 export  const deletePost = async(req,res)=>{
     const {id} = req.query
-    console.log(id);
     try{
         const postcheck = await post.findOne({where:{id}})
         console.log(postcheck);

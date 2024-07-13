@@ -6,17 +6,5 @@ export const sequelizeInstance = new Sequelize('bmykz3uiadga2jbq30gg','uifemwpix
 })
 
  
-const dbconnection = async()=>{
-    try {  
-        await sequelizeInstance.sync()    
-          
-        console.log('Connection has been established successfully.');   
-      } catch (error) {
-        console.error('Unable to connect to the database:', error);
-      }
-
-}
-
-
 
 export default dbconnection

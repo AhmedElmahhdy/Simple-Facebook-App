@@ -3,7 +3,7 @@ import { sequelizeInstance } from "../dbconnection.js";
 import { post } from "./posts.model.js";
 import { Comment } from "./comment.model.js";
 
-export const User = sequelizeInstance.define('Users',{
+export const  = sequelizeInstance.define('Users',{
         Id: {
             type: DataTypes.INTEGER,
             primaryKey: true ,
